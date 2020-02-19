@@ -8,7 +8,7 @@
         android:entries="@array/difficulties"
         android:entryValues="@array/difficulties"
         android:key="difficulty"
-        android:title="Difficulty settings" />
+        android:title="@string/difficulty_settings" />
 
 
 </PreferenceScreen>

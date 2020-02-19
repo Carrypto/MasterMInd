@@ -1,8 +1,25 @@
 <resources>
+<!--    app name-->
     <string name="app_name">Master Mind</string>
+<!--    activity_main-->
+    <string name="app_name_big_letters">MASTER MIND</string>
+    <string name="start_game_button">Start</string>
+    <string name="scores_button">Scores</string>
+<!--    activity_game-->
+    <string name="check_button">Check</string>
+<!--    activity_settings-->
+    <string name="difficulty_settings">Difficulty Settings</string>
     <string-array name="difficulties">
         <item>"easy"</item>
         <item>"medium"</item>
         <item>"hard"</item>
     </string-array>
+<!--    WinDialog-->
+    <string name="you_win">You Win</string>
+<!--    LoseDialog-->
+    <string name="you_lose">You Lose</string>
+<!--    GameActivity-->
+    <string name="difficulty_level_annotation">Difficulty level: %s</string>
+    <string name="fill_all_fields">Fill all fields</string>
+    <string name="easy_level_annotation">level easy, enter numbers from 0 to 6</string>
 </resources>

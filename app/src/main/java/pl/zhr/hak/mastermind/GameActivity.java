@@ -40,7 +40,7 @@ public class GameActivity extends AppCompatActivity {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         difficulty = preferences.getString("difficulty", "medium");
-        Toast.makeText(GameActivity.this, difficulty, Toast.LENGTH_SHORT).show();
+        Toast.makeText(GameActivity.this,getString(R.string.difficulty_level_annotation,difficulty), Toast.LENGTH_SHORT).show();
 
         //sprawdzanie poprawności wprowadzonych wartości i zmiana skupienia po wpisaniu
         textCheck(firstNumber, secondNumber);
@@ -85,7 +85,7 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (firstNumber.getText().toString().equals("") || secondNumber.getText().toString().equals("") || thirdNumber.getText().toString().equals("") || fourthNumber.getText().toString().equals("")) {
-                    Toast.makeText(GameActivity.this, "wprowadz wszystkie liczby", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(GameActivity.this,getString(R.string.fill_all_fields), Toast.LENGTH_SHORT).show();
                 } else {
                     int[] input = {Integer.parseInt(firstNumber.getText().toString()), Integer.parseInt(secondNumber.getText().toString()), Integer.parseInt(thirdNumber.getText().toString()), Integer.parseInt(fourthNumber.getText().toString())};
                     hintList.add(new Hint(Integer.parseInt(firstNumber.getText().toString()), Integer.parseInt(secondNumber.getText().toString()), Integer.parseInt(thirdNumber.getText().toString()), Integer.parseInt(fourthNumber.getText().toString()), countBlack(code, input), countWhite(code, input)));
@@ -121,7 +121,7 @@ public class GameActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (checkedText.getText().toString().length() == 1) {
                     if (difficulty.equals("easy") && Integer.parseInt(checkedText.getText().toString()) > 6) {
-                        Toast.makeText(GameActivity.this, "poziom łatwy, wprowadź liczbe z zakresu 0-6", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(GameActivity.this,getString(R.string.easy_level_annotation), Toast.LENGTH_LONG).show();
                         checkedText.getText().clear();
                     } else nextText.requestFocus();
                 }

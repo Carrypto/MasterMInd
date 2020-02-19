@@ -13,7 +13,7 @@ public class LoseDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        builder.setTitle("przegrałeś");
+        builder.setTitle(R.string.you_lose);
 
         return builder.create();
     }

@@ -12,10 +12,4 @@ public class ScoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
 }

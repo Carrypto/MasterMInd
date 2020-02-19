@@ -13,7 +13,7 @@ public class WinDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        builder.setTitle("wygrałeś");
+        builder.setTitle(R.string.you_win);
 
         return builder.create();
     }
