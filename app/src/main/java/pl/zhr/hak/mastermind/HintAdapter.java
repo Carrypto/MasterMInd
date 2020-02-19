@@ -118,7 +118,7 @@ public class HintAdapter extends RecyclerView.Adapter<HintAdapter.HintViewHolder
                 holder.hintImage.setImageResource(R.drawable.m4b0w);
                 break;
             default:
-                holder.hintImage.setImageResource(R.drawable.m0b4w);
+                holder.hintImage.setImageResource(R.drawable.m4b0w);
                 break;
         }
     }
@@ -127,5 +127,10 @@ public class HintAdapter extends RecyclerView.Adapter<HintAdapter.HintViewHolder
     @Override
     public int getItemCount() {
         return mHintList.size();
+    }
+
+    void setHints(List<Hint> beasts) {
+        mHintList = beasts;
+        notifyDataSetChanged();
     }
 }
