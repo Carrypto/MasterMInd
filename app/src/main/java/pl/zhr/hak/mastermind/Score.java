@@ -18,9 +18,6 @@ public class Score {
     private int attempts;
 
     @ColumnInfo
-    private int chances;
-
-    @ColumnInfo
     private String difficulty;
 
     public int getId() {
@@ -45,14 +42,6 @@ public class Score {
 
     public void setAttempts(int attempts) {
         this.attempts = attempts;
-    }
-
-    public int getChances() {
-        return chances;
-    }
-
-    public void setChances(int chances) {
-        this.chances = chances;
     }
 
     public String getDifficulty() {

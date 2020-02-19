@@ -2,10 +2,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <androidx.preference.SwitchPreference
-        android:defaultValue="true"
-        android:key="example_switch"
-        android:summary="Turn this option on or off"
-        android:title="Settings option" />
+
+
+    <ListPreference
+        android:entries="@array/difficulties"
+        android:entryValues="@array/difficulties"
+        android:key="difficulty"
+        android:title="Difficulty settings" />
+
 
 </PreferenceScreen>
