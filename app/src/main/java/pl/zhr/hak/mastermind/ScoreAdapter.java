@@ -59,7 +59,7 @@ public class ScoreAdapter extends RecyclerView.Adapter<ScoreAdapter.ScoreViewHol
     public void onBindViewHolder(@NonNull ScoreViewHolder holder, int position) {
 
         int diffAtt;
-        if (mScoreList.get(position).getDifficulty().equals(String.valueOf(R.string.easy))) {
+        if (mScoreList.get(position).getDifficulty().equals(this.mContext.getString(R.string.easy))) {
             diffAtt = 10;
         } else diffAtt = 8;
 
