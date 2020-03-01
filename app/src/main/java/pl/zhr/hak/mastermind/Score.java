@@ -12,13 +12,23 @@ public class Score {
     private int id;
 
     @ColumnInfo
-    private String name;
-
-    @ColumnInfo
     private int attempts;
 
     @ColumnInfo
+    private int points;
+
+    @ColumnInfo
+    private String name;
+
+    @ColumnInfo
     private String difficulty;
+
+    public Score(int attempts, int points, String name, String difficulty) {
+        this.attempts = attempts;
+        this.points = points;
+        this.name = name;
+        this.difficulty = difficulty;
+    }
 
     public int getId() {
         return id;
@@ -28,20 +38,28 @@ public class Score {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getAttempts() {
         return attempts;
     }
 
     public void setAttempts(int attempts) {
         this.attempts = attempts;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDifficulty() {

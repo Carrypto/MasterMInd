@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    difficulties for languages to compare-->
+    <string name="easy">łatwy</string>
+    <string name="medium">średni</string>
+    <string name="hard">trudny</string>
+    <!--    app name-->
+    <string name="app_name">Master Mind</string>
+    <!--    activity_main-->
+    <string name="app_name_big_letters">MASTER MIND</string>
+    <string name="start_game_button">Start</string>
+    <string name="scores_button">Ranking</string>
+    <!--    activity_game-->
+    <string name="check_button">Sprawdź</string>
+    <!--    activity_settings-->
+    <string name="difficulty_settings">Ustawienia Poziomu Trudności</string>
+    <string-array name="difficulties">
+        <item>"łatwy"</item>
+        <item>"średni"</item>
+        <item>"trudny"</item>
+    </string-array>
+    <!--    WinDialog-->
+    <string name="you_win">Wygrałeś</string>
+    <string name="put_name">Podaj swoje imię:</string>
+    <string name="put_name_warning">Proszę podać swoje imię</string>
+    <string name="ok">OK</string>
+    <!--    LoseDialog-->
+    <string name="you_lose">Przegrałeś</string>
+    <string name="what_was_that">Poprawny kod: %s</string>
+    <!--    GameActivity-->
+    <string name="difficulty_level_annotation">Poziom trudności: %s</string>
+    <string name="fill_all_fields">Wypełnij wszystkie pola</string>
+    <string name="easy_level_annotation">Poziom łatwy, wprowadź cyfry od 0 do 6</string>
+    <!--    ScoreActivity-->
+    <string name="points">pkt</string>
+    <string name="attempts">próby: </string>
+    <string name="difficulty">poziom: </string>
+    <string name="no_data">Wygraj przynajmniej jedną grę żeby zobaczyć ranking</string>
+    <!--    SettingsActivity-->
+    <string name="easy_message">Poziom łatwy, 10 prób, cyfry 0–6, brak powtórzeń w kodzie</string>
+    <string name="medium_message">Poziom średni, 8 prób, cyfry 0–9, brak powtórzeń w kodzie</string>
+    <string name="hard_message">Poziom trudny, 8 prób, cyfry 0–9, cyfry w kodzie mogą się powtarzać</string>
+</resources>

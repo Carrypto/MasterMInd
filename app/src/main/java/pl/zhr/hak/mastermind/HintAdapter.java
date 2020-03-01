@@ -51,10 +51,10 @@ public class HintAdapter extends RecyclerView.Adapter<HintAdapter.HintViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull HintViewHolder holder, int position) {
-        holder.firstHintNumber.setText(Integer.toString(mHintList.get(position).getFirstHintNumber()));
-        holder.secondHintNumber.setText(Integer.toString(mHintList.get(position).getSecondHintNumber()));
-        holder.thirdHintNumber.setText(Integer.toString(mHintList.get(position).getThirdHintNumber()));
-        holder.fourthHintNumber.setText(Integer.toString(mHintList.get(position).getFourthHintNumber()));
+        holder.firstHintNumber.setText(String.valueOf(mHintList.get(position).getFirstHintNumber()));
+        holder.secondHintNumber.setText(String.valueOf(mHintList.get(position).getSecondHintNumber()));
+        holder.thirdHintNumber.setText(String.valueOf(mHintList.get(position).getThirdHintNumber()));
+        holder.fourthHintNumber.setText(String.valueOf(mHintList.get(position).getFourthHintNumber()));
         switch (mHintList.get(position).getBlackPins()) {
             case 0:
                 switch (mHintList.get(position).getWhitePins()) {
@@ -129,8 +129,8 @@ public class HintAdapter extends RecyclerView.Adapter<HintAdapter.HintViewHolder
         return mHintList.size();
     }
 
-    void setHints(List<Hint> beasts) {
-        mHintList = beasts;
+    void setHints(List<Hint> hints) {
+        mHintList = hints;
         notifyDataSetChanged();
     }
 }

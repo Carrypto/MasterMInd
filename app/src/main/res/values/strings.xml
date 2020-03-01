@@ -1,4 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    difficulties for languages to compare-->
+    <string name="easy">easy</string>
+    <string name="medium">medium</string>
+    <string name="hard">hard</string>
 <!--    app name-->
     <string name="app_name">Master Mind</string>
 <!--    activity_main-->
@@ -16,10 +21,23 @@
     </string-array>
 <!--    WinDialog-->
     <string name="you_win">You Win</string>
+    <string name="put_name">Please put your name:</string>
+    <string name="put_name_warning">put your name first</string>
+    <string name="ok">OK</string>
 <!--    LoseDialog-->
     <string name="you_lose">You Lose</string>
+    <string name="what_was_that">The code was: %s</string>
 <!--    GameActivity-->
     <string name="difficulty_level_annotation">Difficulty level: %s</string>
     <string name="fill_all_fields">Fill all fields</string>
     <string name="easy_level_annotation">level easy, enter numbers from 0 to 6</string>
+<!--    ScoreActivity-->
+    <string name="points">pt</string>
+    <string name="attempts">attempts: </string>
+    <string name="difficulty">difficulty: </string>
+    <string name="no_data">Win at least one game to see Scores</string>
+<!--    SettingsActivity-->
+    <string name="easy_message">Level easy, 10 attempts, numbers 0–6, numbers in code cannot repeat</string>
+    <string name="medium_message">Level medium, 8 attempts, numbers 0–9, numbers in code cannot repeat</string>
+    <string name="hard_message">Level hard, 8 attempts, numbers 0–9, numbers in code may repeat</string>
 </resources>

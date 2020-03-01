@@ -14,14 +14,11 @@ import java.util.List;
 @Dao
 public interface ScoreDao {
 
-    @Query("SELECT * FROM SCORES")
-    LiveData<List<Score>> getAll();
-
-    @Insert
-    void insert(Score score);
+    @Query("SELECT * FROM SCORES ORDER BY points DESC")
+    LiveData<List<Score>> getAllByOrder();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(List<Score> scores);
+    void insert(Score score);
 
     @Delete
     void delete(Score score);
