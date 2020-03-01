@@ -102,7 +102,7 @@ public class GameActivity extends AppCompatActivity {
                 chances--;
                 attempts++;
 
-                if (countBlack(code, input) != 4) {
+                if (countBlack(code, input) == 4) {
                     Bundle args = new Bundle();
                     args.putInt("attempts", attempts);
                     args.putString("difficulty",difficulty);
